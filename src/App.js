@@ -1,24 +1,33 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from "react"
+import { Player } from 'furioos-sdk';
 import './App.css';
 
+const options = {
+  whiteLabel: true,
+  hideToolbar: true,
+  hideTitle: true,
+  hidePlayButton: true,
+  // debugAppMode: true
+};
+
 function App() {
+
+  const [loaded, setLoaded] = useState(false)
+  const [player, setPlayer] = useState()
+
+  useEffect(() => {
+    loaded && setPlayer(new Player("849.492", "Ue4Container", options))
+  }, [loaded])
+
+  useEffect(() => {
+    player && maximize()
+  }, [player])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div onMouseEnter={() => setLoaded(true)} style={{ width: "90vw", height: "90vh" }} id="Ue4Container">
+
     </div>
+
   );
 }
 
