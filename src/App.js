@@ -6,7 +6,7 @@ const options = {
   whiteLabel: true,
   hideToolbar: true,
   hideTitle: true,
-  hidePlayButton: true,
+  hidePlayButton: false,
   // debugAppMode: true
 };
 
@@ -18,10 +18,6 @@ function App() {
   useEffect(() => {
     loaded && setPlayer(new Player("849.492", "Ue4Container", options))
   }, [loaded])
-
-  useEffect(() => {
-    player && maximize()
-  }, [player])
 
   return (
     <div onMouseEnter={() => setLoaded(true)} style={{ width: "90vw", height: "90vh" }} id="Ue4Container">
