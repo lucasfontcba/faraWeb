@@ -1,0 +1,41 @@
+.ContainerText{
+    width:80%;
+    margin:0 auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    display: flex;
+ justify-content: space-between;
+
+}
+.ContainerText span {
+    padding: 0.3em 0.5em;
+    border:1px solid black
+}
+#lineMidle{
+    padding:0;
+    border:none;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 700;
+    color: slategray;
+
+
+}
+.ContainerText p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    line-height: 22px;
+    width: 60%;
+
+}
+
+.ContainerText .imagen{
+    width: 37%;
+    height: 80vh;
+    margin-left: 1em;
+      margin-top:1.3em;
+      margin-bottom:1.3em;
+    
+    background-color: slategrey;
+}
+

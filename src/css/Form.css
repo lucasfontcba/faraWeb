@@ -1,0 +1,145 @@
+
+textarea:focus, input:focus,button:focus{
+  outline: none !important;
+  border:none;
+}
+.containerForm{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+   
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+
+}
+.containerHeaderForm{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.containerHeaderForm h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3em;
+    font-weight: 400;
+}
+.containerForm span{
+    font-weight: 700;
+    color: rgb(189, 185, 180);
+}
+
+.containerForm input{
+    border:none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.first6{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;;
+  
+    width: 100%;
+    flex-wrap: wrap;
+}
+.first6 input{
+    width: 35%;
+    height: 3em;
+    margin-left: 3em;
+    margin-right: 3em;
+    background-color: rgb(228, 232, 235);
+    margin-bottom: 2em;
+    padding-left: 1em;
+
+}
+.first6 select{
+    width: 36.2%;
+    height: 3em;
+    margin-left: 3em;
+    margin-right: 3em;
+    background-color: aliceblue;
+    margin-bottom: 1em;
+    background-color: rgb(228, 232, 235);
+    border:none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 1em;
+
+}
+
+
+
+
+
+.textarea{
+    width: 78%;
+    margin: 0 auto;
+    background-color: rgb(228, 232, 235);
+    margin-bottom: 2em;
+    border:none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 1em;
+   
+}
+#using{
+    height: 3em;
+    width: 79%;
+    margin: 0 auto;
+    background-color: rgb(228, 232, 235);
+    border:none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 1em;
+    margin-bottom: 2em;
+
+}
+/* .pContainer{
+    width: 80%;
+} */
+form p{
+    font-size: .75em;
+    line-height: 1.4;
+    font-style: italic;
+    width: 78%;
+ 
+    margin : 0 auto;
+ 
+}
+.checkbox{
+    width: 80%;
+    margin : 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 3em;
+
+
+
+}
+.containerForm label{
+    margin-left: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+}
+.containerForm button{
+    width: 10%;
+    margin: 0 auto;
+    border: none;
+    padding: .875em 1.5em;
+    border-width: 1px;
+    border-color: currentColor;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: .875em;
+    cursor:pointer;
+    border-radius: 2.5em;
+    background-clip: padding-box;
+    margin-bottom: 3em;
+    font-weight: 700;
+}
+
+

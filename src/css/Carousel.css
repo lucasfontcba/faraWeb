@@ -1,0 +1,16 @@
+/* .containerFoto img{
+    width: 100%;
+  height: 100%;
+}
+.swiper-container {
+    width: 90%;
+   
+  }
+  .swiper-zoom-container{
+      z-index: 5;
+  } */
+
+  .carouselContainer{
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
