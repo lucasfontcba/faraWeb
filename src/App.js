@@ -7,6 +7,7 @@ import Form from'./components/Form'
 import TextBody from './components/TextBody'
 import Ue4player2 from './components/Ue4player2'
 // import AppProvider from './AppProvider'
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 
 function App() {

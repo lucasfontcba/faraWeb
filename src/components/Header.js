@@ -4,13 +4,9 @@ import React, { useState, useContext } from "react";
 import VideoHeader from './VideoHeader'
 import MenuBar from './MenuBar'
 
-
-
-// function Carousel() {
+// 
 
     export default function header() {
-
-
 
 
   return (

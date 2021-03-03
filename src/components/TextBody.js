@@ -7,7 +7,7 @@ function TextBody() {
   // configure Swiper to use modules
 
   return (
-    <div className="ContainerText">
+    <div className="ContainerText" id='AboutUs'>
       <p>
         <span>C</span>onsidering the physical, mental, and emotional needs of people, interior
         designers use human-centered approaches to address how we live today.

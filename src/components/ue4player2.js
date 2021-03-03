@@ -19,13 +19,14 @@ function Ue4player() {
   useEffect(() => !player && setPlayer(new Player("849.492", "Ue4Container", options)), [loaded])
 
   return (
-    <div style={{
+    <div   id='tour' style={{
       display: "grid",
       height: "80vh",
       backgroundColor: "white",
       justifyContent: "center",
       alignContent: "center",
       overflow: "hidden",
+    
     }} >
 
       <div onMouseEnter={() => setLoaded(true)}

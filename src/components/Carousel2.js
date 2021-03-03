@@ -32,7 +32,7 @@ function Carousel2() {
       };
     
       return (
-        <div className='carouselContainer'>
+        <div className='carouselContainer' id='Gallery'>
           <Gallery photos={photos} onClick={openLightbox} />
           <ModalGateway>
             {viewerIsOpen ? (
