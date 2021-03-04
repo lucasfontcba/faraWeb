@@ -1,7 +1,9 @@
 {
   "name": "faraweb",
   "version": "0.1.0",
+  "homepage": "/fara",
   "private": true,
+  
   "dependencies": {
     "@brainhubeu/react-carousel": "^1.19.26",
     "@fortawesome/fontawesome-svg-core": "^1.2.34",

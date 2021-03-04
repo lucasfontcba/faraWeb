@@ -16,7 +16,7 @@ function Ue4player() {
   const [loaded, setLoaded] = useState(false)
   const [player, setPlayer] = useState()
 
-  useEffect(() => !player && setPlayer(new Player("849.492", "Ue4Container", options)), [loaded])
+  useEffect(() => !player && setPlayer(new Player("375.200", "Ue4Container2", options)), [loaded])
 
   return (
     <div   id='tour' style={{
@@ -26,6 +26,7 @@ function Ue4player() {
       justifyContent: "center",
       alignContent: "center",
       overflow: "hidden",
+      marginBottom: '2em'
     
     }} >
 
@@ -40,7 +41,7 @@ function Ue4player() {
           justifyContent: "center",
           alignContent: "center"
 
-        }} id="Ue4Container" />
+        }} id="Ue4Container2" />
 
     </div>
   );

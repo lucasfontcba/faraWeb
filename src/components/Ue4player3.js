@@ -5,7 +5,7 @@ const Player = SDK.Player;
 
 const options = {
   whiteLabel: true,
-  hideToolbar: false,
+  hideToolbar: true,
   hideTitle: true,
   hidePlayButton: false
   // debugUe$playerMode: true
@@ -15,27 +15,21 @@ function Ue4player() {
 
   const [loaded, setLoaded] = useState(false)
   const [player, setPlayer] = useState()
-  const [maximize, setMaximize] = useState(false)
 
-  useEffect(() => !player && setPlayer(new Player("129.948", "Ue4Container1", options)), [loaded])
-
- const max= maximize? 'maximi' : 'minimi'
-
+  useEffect(() => !player && setPlayer(new Player("011.081", "Ue4Container3", options)), [loaded])
 
   return (
-    <div   id='tour' className={max} style={{
+    <div   id='tour' style={{
       display: "grid",
       height: "80vh",
       backgroundColor: "white",
       justifyContent: "center",
       alignContent: "center",
       overflow: "hidden",
-      marginBottom: '2em'
     
     }} >
-      {/* <button onClick={()=>setMaximize(!maximize)}>on press</button> */}
 
-      <div  className={max} onMouseEnter={() => setLoaded(true)}
+      <div onMouseEnter={() => setLoaded(true)}
         style={{
           display: "flex",
           boxSizing: "border-box",
@@ -46,7 +40,7 @@ function Ue4player() {
           justifyContent: "center",
           alignContent: "center"
 
-        }} id="Ue4Container1" />
+        }} id="Ue4Container3" />
 
     </div>
   );

@@ -1,0 +1,7 @@
+.minimi {
+ height: 80vh;
+}
+.maximi{
+   height: 100vh;
+   width: calc(80vw + 4px)
+}

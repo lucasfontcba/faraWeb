@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import "../css/MenuBar.css";
 // import Logo from '../../public'
-import Logo from "../images/Logo.png";
+import Logo from "../images/Logo5.png";
 import { Link } from "react-scroll";
 // import Logo2 from '../images/Logo2.png'
 
@@ -22,13 +22,11 @@ export default function MenuBar() {
 
   useEffect(() => {
     window.onscroll = function () {
-      if (window.pageYOffset !== 0) {
+      if (window.pageYOffset < 44.400001525878906) {
         console.log("aa", window.pageYOffset);
         // alert('I AM AT THE TOP');
         setScrollOnTP(true);
-      } else if (window.pageYOffset === 1) {
-        alert("I AM AT THE TOP");
-      } else {
+      }  else {
         setScrollOnTP(false);
       }
     };
@@ -46,7 +44,8 @@ export default function MenuBar() {
   //   window.onscroll = null;
   // }
 
-  const FixedBarClass = scrollOnTP ? "containerMenuBarFixed" : "hiden";
+  const FixedBarClass = scrollOnTP ? "hiden" : "containerMenuBarFixed";
+  const containerMenuBar = scrollOnTP ? "containerMenuBar" : "hiden";
   console.log("scrolONTOP", scrollOnTP);
 
   return (
@@ -90,7 +89,7 @@ export default function MenuBar() {
             offset={-70}
             style={{ display: "inline-block", margin: "20px" }}
           >
-            <h3>Tour 3d</h3>
+            <h3>Virtual Tour</h3>
           </Link>
           <Link
             activeClass="active"
@@ -105,7 +104,7 @@ export default function MenuBar() {
           </Link>
         </div>
       </div>
-      <div className="containerMenuBar">
+      <div className={containerMenuBar}>
         <img id="imagenLogo " src={Logo} alt="Logo" />
 
         <div className="redes">
@@ -146,7 +145,7 @@ export default function MenuBar() {
             offset={-70}
             style={{ display: "inline-block", margin: "20px" }}
           >
-            <h3>Tour 3d</h3>
+            <h3>Virtual Tour</h3>
           </Link>
           <Link
             activeClass="active"
